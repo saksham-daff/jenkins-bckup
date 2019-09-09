@@ -1,0 +1,15 @@
+.java/
+.lastStarted
+.ssh/
+identity.key.enc
+jenkins.install.InstallUtil.installingPlugins
+jenkins.install.InstallUtil.lastExecVersion
+jenkins.install.UpgradeWizard.state
+logs/
+secrets/
+queue.xml.bak
+secret.key
+secret.key.not-so-secret
+.bash_history
+.gitconfig
+.owner
