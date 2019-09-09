@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: MU51AR
+Build-Jdk: 1.8.0_161-1-ojdkbuild
+Extension-Name: github-scm-filter-aged-refs
+Specification-Title: Adds a filtering trait according to a ref date to
+  an existing GitHub Branch Source Plugin configuration.
+Implementation-Title: github-scm-filter-aged-refs
+Implementation-Version: 0.2.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: github-scm-filter-aged-refs
+Long-Name: GitHub Aged References SCM Filter Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Aged+Reference
+ s+SCM+Filter+Plugin
+Plugin-Version: 0.2.0
+Hudson-Version: 2.32.3
+Jenkins-Version: 2.32.3
+Plugin-Dependencies: github-branch-source:2.2.3,scm-api:2.2.0
+Plugin-Developers: Javier Delgado:witokodoria:witokondoria@gmail.com
+

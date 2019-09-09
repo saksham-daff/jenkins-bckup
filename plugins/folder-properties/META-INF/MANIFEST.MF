@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: miguelangel
+Build-Jdk: 1.8.0_112
+Extension-Name: folder-properties
+Specification-Title: Allows defining properties for folders which are 
+ then inherited by all contained jobs.
+Implementation-Title: folder-properties
+Implementation-Version: 1.0
+Group-Id: com.mig82
+Short-Name: folder-properties
+Long-Name: Folder Properties Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Folder+Properties+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 1.642.4
+Jenkins-Version: 1.642.4
+Plugin-Dependencies: cloudbees-folder:5.14,script-security:1.18,struct
+ s:1.2
+Plugin-Developers: Miguelangel Fernandez:mig82:miguelangelxfm@gmail.com
+
