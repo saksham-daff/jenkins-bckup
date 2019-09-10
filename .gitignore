@@ -7,6 +7,7 @@ jenkins.install.InstallUtil.lastExecVersion
 jenkins.install.UpgradeWizard.state
 logs/
 secrets/
+workspace/
 queue.xml.bak
 secret.key
 secret.key.not-so-secret
