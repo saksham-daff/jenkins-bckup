@@ -1,0 +1,23 @@
+Started by user [8mha:////4CNEKBL5R/449DmR86lIAcSdV0hpjsYG2zOb5ewyiQVMAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9xJTczDxDAA1fTarBAAAA[0mAadmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test-repo
+No credentials specified
+Cloning the remote Git repository
+Cloning repository git@github.com:saksham-daff/test-repo.git
+ > git init /var/lib/jenkins/workspace/test-repo # timeout=10
+Fetching upstream changes from git@github.com:saksham-daff/test-repo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress git@github.com:saksham-daff/test-repo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:saksham-daff/test-repo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:saksham-daff/test-repo.git # timeout=10
+Fetching upstream changes from git@github.com:saksham-daff/test-repo.git
+ > git fetch --tags --progress git@github.com:saksham-daff/test-repo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c278f71b029584578d71f6927b7afedc3d6179cb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c278f71b029584578d71f6927b7afedc3d6179cb
+Commit message: "Added Jenkins File"
+First time build. Skipping changelog.
+Finished: SUCCESS

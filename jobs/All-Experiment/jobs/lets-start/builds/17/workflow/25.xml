@@ -1,0 +1,77 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.3">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.74">
+    <parentIds>
+      <string>24</string>
+    </parentIds>
+    <id>25</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.MailStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.74">
+      <arguments>
+        <entry>
+          <string>cc</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>bcc</string>
+          <string></string>
+        </entry>
+        <entry>
+          <string>subject</string>
+          <string>${DEFAULT_SUBJECT}</string>
+        </entry>
+        <entry>
+          <string>replyTo</string>
+          <string>${PROJECT_DEFAULT_REPLYTO}</string>
+        </entry>
+        <entry>
+          <string>from</string>
+          <string>saksham</string>
+        </entry>
+        <entry>
+          <string>to</string>
+          <string>saksham.gupta@daffodilsw.com, shashank.g@daffodilsw.com </string>
+        </entry>
+        <entry>
+          <string>body</string>
+          <string>${DEFAULT_CONTENT}</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.37">
+      <startTime>1568194824177</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.ErrorAction plugin="workflow-api@2.37">
+      <error class="com.sun.mail.smtp.SMTPSendFailedException">
+        <detailMessage>530-5.5.1 Authentication Required. Learn more at
+530 5.5.1  https://support.google.com/mail/?p=WantAuthError a8sm36444140pfa.182 - gsmtp
+</detailMessage>
+        <stackTrace>
+          <trace>com.sun.mail.smtp.SMTPTransport.issueSendCommand(SMTPTransport.java:2057)</trace>
+          <trace>com.sun.mail.smtp.SMTPTransport.mailFrom(SMTPTransport.java:1580)</trace>
+          <trace>com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1097)</trace>
+          <trace>javax.mail.Transport.send0(Transport.java:195)</trace>
+          <trace>javax.mail.Transport.send(Transport.java:124)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:142)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.MailStep$MailStepExecution.run(MailStep.java:128)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+        <cmd>MAIL FROM:&lt;jenkins@46b165e940a2&gt;</cmd>
+        <rc>530</rc>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

@@ -1,0 +1,4 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.bitbucket.BitbucketBuildStatusNotifier_-DescriptorImpl plugin="bitbucket-build-status-notifier@1.4.1">
+  <globalCredentialsId></globalCredentialsId>
+</org.jenkinsci.plugins.bitbucket.BitbucketBuildStatusNotifier_-DescriptorImpl>
