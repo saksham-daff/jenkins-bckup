@@ -1,12 +1,10 @@
 .java/
 .lastStarted
 .ssh/
-identity.key.enc
 jenkins.install.InstallUtil.installingPlugins
 jenkins.install.InstallUtil.lastExecVersion
 jenkins.install.UpgradeWizard.state
 logs/
-secrets/
 workspace/
 queue.xml.bak
 secret.key
